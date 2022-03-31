@@ -6,7 +6,7 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 14:32:41 by makbulut          #+#    #+#             */
-/*   Updated: 2022/03/26 11:04:15 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/03/29 19:24:04 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,32 @@ void	ft_putnbr(int n)
 	if (n == 0)
 		write(STDOUT_FILENO, "0", 1);
 }
+
+char	*ft_strdup(char *str)
+{
+	int i;
+	int j;
+	char	*clone;
+
+	i = 0;
+	while(str[i])
+		i++;
+	clone = malloc(sizeof(char) * (i + 1));
+	i = 0;
+	j = 0;
+	while (str[i])
+		clone[j++] = str[i++];
+	clone[j] = '\0';
+	return (clone);
+}
+// int main(void)
+// {
+// 	char *s;
+
+// 	s = "Mehmet";
+// 	printf("%s", ft_strdup(s));
+// 	return 0;
+// }
 
 // putnumber
 // int main(void)

@@ -6,7 +6,7 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 18:02:50 by makbulut          #+#    #+#             */
-/*   Updated: 2022/03/26 11:13:40 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/03/31 15:03:03 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,15 +41,15 @@ t_stack *stack_a, t_stack *stack_b)
 void	print_bottom_stack(int max_size_nbr[2])
 {
 	write(STDOUT_FILENO, "	", 1);
-	write_n_char(max_size_nbr[0], '-');
+	write_n_char(max_size_nbr[0], '_');
 	write(STDOUT_FILENO, " ", 1);
-	write_n_char(max_size_nbr[1], '-');
+	write_n_char(max_size_nbr[1], '_');
 	write(STDOUT_FILENO, "\n", 1);
 	write(STDOUT_FILENO, "	", 1);
-	write_n_char(max_size_nbr[1], 'a');
-	write(STDOUT_FILENO, " ", 1);
-	write_n_char(max_size_nbr[1], 'b');
-	write(STDOUT_FILENO, "	", 1);
+	write_n_char(max_size_nbr[0] - 1, ' ');
+	write(STDOUT_FILENO, "a ", 2);
+	write_n_char(max_size_nbr[1] - 1, ' ');
+	write(STDOUT_FILENO, "b", 2);
 	write(STDOUT_FILENO, "\n", 1);
 }
 
@@ -68,6 +68,12 @@ void	print_stacks(t_stack *stack_a, t_stack *stack_b)
 	max_size_nbr[1] = get_max_size_nbr_stack(stack_b);
 	print_numbers_stacks(max_size, max_size_nbr, stack_a, stack_b);
 	print_bottom_stack(max_size_nbr);
+}
+
+void	print_instruction(t_instruction *instr)
+{
+	write(STDOUT_FILENO, instr->line, ft_strlen(instr->line));
+	write(STDOUT_FILENO, "\n", 1);
 }
 
 // int main(void)
