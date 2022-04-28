@@ -6,11 +6,11 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 14:56:17 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/26 06:13:31 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:19:58 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../includes/pushswap.h"
+#include "pushswap.h"
 
 char	*ft_strdup_char(const char *str, char stop)
 {

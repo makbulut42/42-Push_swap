@@ -6,11 +6,11 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 23:17:46 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/26 06:13:20 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:19:54 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../includes/pushswap.h"
+#include "pushswap.h"
 
 void	write_n_char(int n, char c)
 {

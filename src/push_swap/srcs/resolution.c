@@ -6,11 +6,11 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 17:10:54 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/26 06:13:54 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:20:21 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../includes/pushswap.h"
+#include "pushswap.h"
 
 int	create_states_resolution(t_state **states)
 {

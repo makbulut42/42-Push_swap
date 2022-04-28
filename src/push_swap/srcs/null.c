@@ -6,11 +6,11 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 06:32:52 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/26 06:13:39 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:20:06 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../includes/pushswap.h"
+#include "pushswap.h"
 
 void	null_new(t_state *new)
 {

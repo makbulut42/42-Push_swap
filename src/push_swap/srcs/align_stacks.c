@@ -6,11 +6,11 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 17:49:05 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/26 06:14:59 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:19:25 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../includes/pushswap.h"
+#include "pushswap.h"
 
 void	calcul_align_b(size_t *pos, size_t *mvt, t_stack *stack_b)
 {

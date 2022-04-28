@@ -6,11 +6,11 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 17:55:18 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/26 06:13:36 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:20:04 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../includes/pushswap.h"
+#include "pushswap.h"
 
 int	can_pb(t_stack *stack_a, t_stack *stack_b)
 {

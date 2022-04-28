@@ -6,11 +6,11 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 17:49:59 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/26 06:14:56 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:19:41 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../includes/pushswap.h"
+#include "pushswap.h"
 
 int	rotate_bruteforce_a(t_state **new_states, \
 t_state *tmp, size_t pos[2], t_stack *stack_b)

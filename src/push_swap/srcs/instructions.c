@@ -6,11 +6,12 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 17:51:19 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/26 06:13:34 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:20:01 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../includes/pushswap.h"
+#include "pushswap.h"
+
 t_instruction	*add_instruction(t_instruction **instructions, char *line)
 {
 	t_instruction	*tmp;

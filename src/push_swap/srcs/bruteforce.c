@@ -6,11 +6,11 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 16:04:16 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/26 06:13:07 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:25:00 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../includes/pushswap.h"
+#include "pushswap.h"
 
 int	check_bruteforce_solution(t_state *states, t_state **result)
 {
@@ -64,9 +64,11 @@ int	bruteforse_order_a(t_program *prg)
 	size_t	pos[2];
 	t_state	*result;
 	t_state	*states;
+	t_state	states1;
 
 	calcul_align_b(&pos[0], &pos[1], &prg->stack_b);
-	states = new_empty_state(&prg->stack_a, NULL, prg->stack_a.max_size);
+	states = new_empty_state(&prg->stack_a, NULL, \
+	prg->stack_a.max_size, &states1);
 	if (!(states))
 		return (1);
 	result = pick_bruteforce_solution(states, pos, &prg->stack_b);

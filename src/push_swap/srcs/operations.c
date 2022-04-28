@@ -6,11 +6,11 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 17:55:12 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/26 06:13:42 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:20:09 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../includes/pushswap.h"
+#include "pushswap.h"
 
 void	reverse_rotate_stack(t_stack *stack)
 {

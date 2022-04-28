@@ -6,7 +6,7 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/14 13:05:57 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/19 13:51:13 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:16:45 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ typedef struct s_state
 
 t_stack			*copy_stack(t_stack	*stack);
 t_state			*new_empty_state(t_stack *stack_a, \
-				t_stack *stack_b, size_t maxsize);
+				t_stack *stack_b, size_t maxsize, t_state *state);
 t_stack			*new_empty_stack(size_t max_size);
 t_state			*new_state_instruction(t_state **states, \
 				t_state *old_state, char *line);
@@ -113,5 +113,6 @@ void			null_new(t_state *new);
 void			null_states(t_state *state);
 size_t			count_instructions(t_instruction *instr);
 t_state			*n_solution(t_state *tmp_state, t_state *solution);
+int				check_function(t_state *state);
 
 #endif

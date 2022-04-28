@@ -1,0 +1,71 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/makbulut/Desktop/Push_swap'
+printf	"\033[2K\r\e[34m\e[1mchecker \e[0m\n"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./src/checker
+ 
+make[1]: Entering directory `/Users/makbulut/Desktop/Push_swap/src/checker'
+mkdir ./compiled_srcs/
+printf "\033[2K\r \e[33mCompiling srcs/checker.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/checker.c -o compiled_srcs/checker.o
+printf "\033[2K\r \e[33mCompiling srcs/init_stacks.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/init_stacks.c -o compiled_srcs/init_stacks.o
+printf "\033[2K\r \e[33mCompiling srcs/operations.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/operations.c -o compiled_srcs/operations.o
+printf "\033[2K\r \e[33mCompiling srcs/instructions.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/instructions.c -o compiled_srcs/instructions.o
+printf "\033[2K\r \e[33mCompiling srcs/utils.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/utils.c -o compiled_srcs/utils.o
+printf "\033[2K\r \e[33mCompiling srcs/print.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/print.c -o compiled_srcs/print.o
+printf "\033[2K\r \e[33mCompiling srcs/debug.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/debug.c -o compiled_srcs/debug.o
+printf "\033[2K\r \e[33mCompiling srcs/zero.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/zero.c -o compiled_srcs/zero.o
+printf "\033[2K\r\e[32m All files compiled into './compiled_srcs/'. \e[0m✅\n"
+gcc -Wall -Wextra -Werror -I ./includes/ ./compiled_srcs/checker.o ./compiled_srcs/init_stacks.o ./compiled_srcs/operations.o ./compiled_srcs/instructions.o ./compiled_srcs/utils.o ./compiled_srcs/print.o ./compiled_srcs/debug.o ./compiled_srcs/zero.o -o checker
+printf "\033[2K\r\e[32m Executable 'checker' created. \e[0m✅\n"
+make[1]: Leaving directory `/Users/makbulut/Desktop/Push_swap/src/checker'
+cp -rf ./src/checker/checker .//checker
+printf	"\033[2K\r\e[34m\e[1mpush_swap \e[0m\n"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./src/push_swap
+make[1]: Entering directory `/Users/makbulut/Desktop/Push_swap/src/push_swap'
+mkdir ./compiled_srcs/
+printf "\033[2K\r \e[33mCompiling srcs/pushswap.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/pushswap.c -o compiled_srcs/pushswap.o
+printf "\033[2K\r \e[33mCompiling srcs/init_stacks.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/init_stacks.c -o compiled_srcs/init_stacks.o
+printf "\033[2K\r \e[33mCompiling srcs/stacks.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/stacks.c -o compiled_srcs/stacks.o
+printf "\033[2K\r \e[33mCompiling srcs/align_stacks.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/align_stacks.c -o compiled_srcs/align_stacks.o
+printf "\033[2K\r \e[33mCompiling srcs/operations.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/operations.c -o compiled_srcs/operations.o
+printf "\033[2K\r \e[33mCompiling srcs/instructions.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/instructions.c -o compiled_srcs/instructions.o
+printf "\033[2K\r \e[33mCompiling srcs/movements.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/movements.c -o compiled_srcs/movements.o
+printf "\033[2K\r \e[33mCompiling srcs/states.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/states.c -o compiled_srcs/states.o
+printf "\033[2K\r \e[33mCompiling srcs/resolution.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/resolution.c -o compiled_srcs/resolution.o
+printf "\033[2K\r \e[33mCompiling srcs/bruteforce.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/bruteforce.c -o compiled_srcs/bruteforce.o
+printf "\033[2K\r \e[33mCompiling srcs/bruteforce_operations.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/bruteforce_operations.c -o compiled_srcs/bruteforce_operations.o
+printf "\033[2K\r \e[33mCompiling srcs/utils.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/utils.c -o compiled_srcs/utils.o
+printf "\033[2K\r \e[33mCompiling srcs/cleaner.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/cleaner.c -o compiled_srcs/cleaner.o
+printf "\033[2K\r \e[33mCompiling srcs/print.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/print.c -o compiled_srcs/print.o
+printf "\033[2K\r \e[33mCompiling srcs/debug.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/debug.c -o compiled_srcs/debug.o
+printf "\033[2K\r \e[33mCompiling srcs/null.c \e[0m⌛ "
+gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/null.c -o compiled_srcs/null.o
+printf "\033[2K\r\e[32m All files compiled into './compiled_srcs/'. \e[0m✅\n"
+gcc -Wall -Wextra -Werror -I ./includes/ ./compiled_srcs/pushswap.o ./compiled_srcs/init_stacks.o ./compiled_srcs/stacks.o ./compiled_srcs/align_stacks.o ./compiled_srcs/operations.o ./compiled_srcs/instructions.o ./compiled_srcs/movements.o ./compiled_srcs/states.o ./compiled_srcs/resolution.o ./compiled_srcs/bruteforce.o ./compiled_srcs/bruteforce_operations.o ./compiled_srcs/utils.o ./compiled_srcs/cleaner.o ./compiled_srcs/print.o ./compiled_srcs/debug.o ./compiled_srcs/null.o -o push_swap
+printf "\033[2K\r\e[32m Executable 'push_swap' created. \e[0m✅\n"
+make[1]: Leaving directory `/Users/makbulut/Desktop/Push_swap/src/push_swap'
+cp -rf ./src/push_swap/push_swap ./push_swap
+make: Leaving directory `/Users/makbulut/Desktop/Push_swap'
+ 

@@ -6,11 +6,11 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/14 13:07:54 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/26 06:13:51 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:37:01 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../includes/pushswap.h"
+#include "pushswap.h"
 
 size_t	count_instructions(t_instruction *instr)
 {
@@ -75,9 +75,10 @@ int	realign_and_fill_a(t_program *prg)
 int	resolve(t_program *prg)
 {
 	t_state		*states;
+	t_state		states1;
 
 	states = new_empty_state(&prg->stack_a, &prg->stack_b, \
-	prg->stack_a.max_size);
+	prg->stack_a.max_size, &states1);
 	if (!states)
 		return (1);
 	if (prg->stack_a.size > 5 && (create_states_resolution(&states) \

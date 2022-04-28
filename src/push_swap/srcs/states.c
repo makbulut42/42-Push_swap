@@ -6,20 +6,20 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 15:57:11 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/26 06:14:02 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:20:29 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../includes/pushswap.h"
+#include "pushswap.h"
 
-t_state	*new_empty_state(t_stack *stack_a, t_stack *stack_b, size_t max_size)
+t_state	*new_empty_state(t_stack *stack_a, t_stack *stack_b, \
+size_t max_size, t_state *state)
 {
-	t_state		*state;
-
 	state = malloc(sizeof(t_state));
 	if (!state)
 		return (NULL);
-	state->stack_a = new_empty_stack(max_size);
+	if (!stack_a)
+		state->stack_a = new_empty_stack(max_size);
 	if (stack_a)
 		state->stack_a = copy_stack(stack_a);
 	else if (!(state->stack_a))
@@ -27,7 +27,8 @@ t_state	*new_empty_state(t_stack *stack_a, t_stack *stack_b, size_t max_size)
 		free(state);
 		return (NULL);
 	}
-	state->stack_b = new_empty_stack(max_size);
+	if (!stack_b)
+		state->stack_b = new_empty_stack(max_size);
 	if (stack_b)
 		state->stack_b = copy_stack(stack_b);
 	else if (!(state->stack_b))

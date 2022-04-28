@@ -6,11 +6,11 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 18:02:50 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/26 06:13:48 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:20:12 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./../includes/pushswap.h"
+#include "pushswap.h"
 
 void	print_numbers_stacks(int max_size, int max_size_nbr[2],
 t_stack *stack_a, t_stack *stack_b)
