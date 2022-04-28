@@ -6,7 +6,7 @@
 /*   By: makbulut <makbulut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/14 13:05:57 by makbulut          #+#    #+#             */
-/*   Updated: 2022/04/28 06:16:45 by makbulut         ###   ########.fr       */
+/*   Updated: 2022/04/28 06:45:27 by makbulut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,6 +113,5 @@ void			null_new(t_state *new);
 void			null_states(t_state *state);
 size_t			count_instructions(t_instruction *instr);
 t_state			*n_solution(t_state *tmp_state, t_state *solution);
-int				check_function(t_state *state);
 
 #endif

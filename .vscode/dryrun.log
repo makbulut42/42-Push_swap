@@ -28,6 +28,7 @@ make[1]: Leaving directory `/Users/makbulut/Desktop/Push_swap/src/checker'
 cp -rf ./src/checker/checker .//checker
 printf	"\033[2K\r\e[34m\e[1mpush_swap \e[0m\n"
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./src/push_swap
+ 
 make[1]: Entering directory `/Users/makbulut/Desktop/Push_swap/src/push_swap'
 mkdir ./compiled_srcs/
 printf "\033[2K\r \e[33mCompiling srcs/pushswap.c \e[0m⌛ "
@@ -53,6 +54,7 @@ gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/bruteforce.c -o compiled_srcs/b
 printf "\033[2K\r \e[33mCompiling srcs/bruteforce_operations.c \e[0m⌛ "
 gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/bruteforce_operations.c -o compiled_srcs/bruteforce_operations.o
 printf "\033[2K\r \e[33mCompiling srcs/utils.c \e[0m⌛ "
+ 
 gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/utils.c -o compiled_srcs/utils.o
 printf "\033[2K\r \e[33mCompiling srcs/cleaner.c \e[0m⌛ "
 gcc -Wall -Wextra -Werror -I ./includes/ -c srcs/cleaner.c -o compiled_srcs/cleaner.o
